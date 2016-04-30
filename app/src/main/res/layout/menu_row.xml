@@ -13,7 +13,7 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Item Name"
@@ -23,7 +23,7 @@
         android:layout_marginStart="18dp" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Item Price"
@@ -32,12 +32,30 @@
         android:layout_alignStart="@+id/name" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Item Description"
         android:id="@+id/description"
         android:layout_below="@+id/price"
         android:layout_alignStart="@+id/price" />
+
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker"
+        android:layout_alignTop="@+id/price"
+        android:layout_toEndOf="@+id/price" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Quantity"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignStart="@+id/numberPicker" />
+
 
 </RelativeLayout>

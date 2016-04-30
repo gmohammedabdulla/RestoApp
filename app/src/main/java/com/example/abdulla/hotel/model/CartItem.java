@@ -19,4 +19,9 @@ public class CartItem extends Item implements Serializable {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+    public String toString(){
+        return "id-"+getId()+", name-"+getName()+", price-"+getPrice()+", Quantity-"+quantity;
+    }
+
 }
